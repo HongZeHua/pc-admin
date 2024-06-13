@@ -24,10 +24,13 @@
         <el-input
           placeholder="password"
           name="password"
+          :type="passwordType"
           v-model="loginForm.password"
         />
-        <span class="show-pwd">
-          <svg-icon icon="eye"></svg-icon>
+        <span class="show-pwd" @click="onChangePwdType">
+          <svg-icon
+            :icon="passwordType === 'password' ? 'eye' : 'eye-open'"
+          ></svg-icon>
         </span>
       </el-form-item>
       <el-button type="primary" style="width: 100%; margin-bottom: 30px"
@@ -62,6 +65,15 @@ const loginRules = ref({
     }
   ]
 })
+// 处理密码框文本显示状态
+const passwordType = ref('password')
+const onChangePwdType = () => {
+  if (passwordType.value === 'password') {
+    passwordType.value = 'text'
+  } else {
+    passwordType.value = 'password'
+  }
+}
 </script>
 
 <style lang="scss" scoped>
