@@ -7,18 +7,18 @@
       <!-- username -->
       <el-form-item prop="username">
         <span class="svg-container">
-          <el-icon><Avatar /></el-icon>
+          <svg-icon icon="user"></svg-icon>
         </span>
         <el-input placeholder="username" name="username" type="text" />
       </el-form-item>
       <!-- password -->
       <el-form-item prop="password">
         <span class="svg-container">
-          <el-icon><Avatar /></el-icon>
+          <svg-icon icon="password"></svg-icon>
         </span>
         <el-input placeholder="password" name="password" />
         <span class="show-pwd">
-          <el-icon><Avatar /></el-icon>
+          <svg-icon icon="eye"></svg-icon>
         </span>
       </el-form-item>
       <el-button type="primary" style="width: 100%; margin-bottom: 30px"
