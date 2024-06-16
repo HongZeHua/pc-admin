@@ -38,5 +38,6 @@ module.exports = defineConfig({
         symbolId: 'icon-[name]'
       })
       .end()
+    config.resolve.alias.set('path', require.resolve('path-browserify'))
   }
 })
