@@ -187,7 +187,23 @@
 }
 
 .el-avatar {
-  --el-avatar-background-color: none;
+  --el-avatar-bg-color: none;
+}
+
+.breadcrumb-enter-active,
+.breadcrumb-leave-active {
+  transition: all 0.5s;
+}
+
+.breadcrumb-enter-from,
+.breadcrumb-enter-to {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.breadcrumb-leave-active {
+  display: inline-block;
+  position: absolute;
 }
 
 html,
