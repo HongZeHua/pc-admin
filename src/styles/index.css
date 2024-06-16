@@ -62,6 +62,10 @@
   margin-right: 16px;
 }
 
+#app .sidebar-container .el-menu--collapse .svg-icon {
+  margin-right: 0px;
+}
+
 #app .sidebar-container .sub-el-icon {
   margin-right: 12px;
   margin-left: -2px;
@@ -180,6 +184,10 @@
   background: none !important;
   box-shadow: none !important;
   --el-select-input-focus-border-color: none !important;
+}
+
+.el-avatar {
+  --el-avatar-background-color: none;
 }
 
 html,
