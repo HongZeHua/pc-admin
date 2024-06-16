@@ -4,6 +4,7 @@ const getters = {
   userInfo: (state) => state.user.userInfo,
   // return true 表示已存在用户信息
   hasUserInfo: (state) => JSON.stringify(state.user.userInfo) !== '{}',
-  cssVar: (state) => variables
+  cssVar: (state) => variables,
+  sidebarOpened: (state) => state.app.sidebarOpened
 }
 export default getters
