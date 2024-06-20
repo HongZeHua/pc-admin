@@ -3,8 +3,10 @@
     <!-- 汉堡 -->
     <hamburger class="hamburger-container"></hamburger>
     <!-- 面包屑 -->
-    <breadcrumb class="breadcrumb-container"></breadcrumb>
+    <breadcrumb id="guide-breadcrumb" class="breadcrumb-container"></breadcrumb>
     <div class="right-menu">
+      <!-- 功能引导 -->
+      <guide class="right-menu-item hover-effect"></guide>
       <!-- 页面搜索 -->
       <header-search class="right-menu-item hover-effect"></header-search>
       <!-- 全屏切换 -->
@@ -49,6 +51,7 @@ import LangSelect from '@/components/LangSelect'
 import ThemeSelect from '@/components/ThemeSelect'
 import Screenfull from '@/components/Screenfull'
 import HeaderSearch from '@/components/HeaderSearch'
+import Guide from '@/components/Guide'
 
 const store = useStore()
 /**
