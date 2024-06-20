@@ -84,17 +84,17 @@ export default {
     sidebarDesc: '项目功能菜单'
   },
   profile: {
-    muted: '《vue3 改写 vue-element-admin，实现后台前端综合解决方案》项目演示',
-    introduce: '介绍（已升级 element-plus 正式版）',
+    muted: '《基于vue3，实现后台前端综合解决方案》项目演示',
+    introduce: '介绍',
     projectIntroduction: '项目介绍',
     projectFunction: '项目功能',
     feature: '功能',
     chapter: '章节',
     author: '作者',
-    name: 'Sunday',
-    job: '一个前端开发程序猿',
+    name: 'zhhong',
+    job: '学生',
     Introduction:
-      '高级技术专家，曾就职于国内一线互联网公司，统筹过的多个大型项目用户数已过千万级。致力于研究大前端技术，多次受邀参加国内前端技术分享会，如：2018 年 Google 中国技术分享会。'
+      '目前就读于 广东石油化工学院，计算机科学与技术专业。本人自驱力强，热爱前端技术：能通过视频、博客、书籍等多种渠道获取知识，丰富自己的知识储备；热衷于钻研各种技术知识，善于与他人交流合作。'
   },
   userInfo: {
     print: '打印',

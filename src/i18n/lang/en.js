@@ -85,17 +85,17 @@ export default {
   },
   profile: {
     muted:
-      '"Vue3 rewrite vue-element-admin, realize the back-end front-end integrated solution" project demonstration',
+      '"Based on Vue3, realize the back-end front-end integrated solution" project demonstration',
     introduce: 'Introduce',
     projectIntroduction: 'Project Introduction',
     projectFunction: 'Project Function',
     feature: 'Feature',
     chapter: 'Chapter',
     author: 'Author',
-    name: 'Sunday',
-    job: 'A front-end development program',
+    name: 'zhhong',
+    job: 'student',
     Introduction:
-      'A senior technical expert, once worked in a domestic first-line Internet company, and has coordinated multiple large-scale projects with more than tens of millions of users. Committed to researching big front-end technology, he has been invited to participate in domestic front-end technology sharing sessions many times, such as: Google China Technology Sharing Session in 2018.'
+      'Currently study computer science and technology in Guangdong University of Petrochemical Technology. Strong self-drive, love front-end technology: can acquire knowledge through videos, blogs, books and other channels to enrich their knowledge reserves; Keen to study all kinds of technical knowledge, good at communication and cooperation with others.'
   },
   userInfo: {
     print: 'Print',
