@@ -130,7 +130,7 @@ watchSwitchLang(() => {
 <style lang="scss" scoped>
 .header-search {
   font-size: 0 !important;
-  ::v-deep(.search-icon) {
+  :deep(.search-icon) {
     cursor: pointer;
     font-size: 18px;
     vertical-align: middle;
@@ -145,7 +145,7 @@ watchSwitchLang(() => {
     display: inline-block;
     vertical-align: middle;
 
-    ::v-deep(.el-select__wrapper) {
+    :deep(.el-select__wrapper) {
       border-radius: 0;
       border: 0;
       padding-left: 0;

@@ -21,11 +21,7 @@
         ></el-table-column>
         <el-table-column :label="$t('msg.excel.avatar')" align="center">
           <template v-slot="{ row }">
-            <el-image
-              class="avatar"
-              :src="row.avatar"
-              :preview-src-list="[row.avatar]"
-            ></el-image>
+            <el-image class="avatar" :src="row.avatar"></el-image>
           </template>
         </el-table-column>
         <el-table-column :label="$t('msg.excel.role')">
