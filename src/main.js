@@ -10,6 +10,7 @@ import './styles/index.scss'
 import installIcons from '@/icons'
 import './permission'
 import insallFilter from '@/filters'
+import installDirective from '@/directives'
 
 const app = createApp(App)
 for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
@@ -17,4 +18,5 @@ for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
 }
 installIcons(app)
 insallFilter(app)
+installDirective(app)
 app.use(store).use(router).use(ElementPlus).use(i18n).mount('#app')
