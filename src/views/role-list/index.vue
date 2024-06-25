@@ -19,6 +19,7 @@
           <el-button
             type="primary"
             size="small"
+            v-permission="['distributePermission']"
             @click="onDistributePermissionClick(row)"
             >{{ $t('msg.role.assignPermissions') }}</el-button
           >

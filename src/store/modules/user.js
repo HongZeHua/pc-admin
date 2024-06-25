@@ -2,7 +2,7 @@ import { getUserInfo, login } from '@/api/sys'
 import md5 from 'md5'
 import { setItem, getItem, removeAllItem } from '@/utils/storage'
 import { TOKEN } from '@/constant'
-import router from '@/router'
+import router, { resetRouter } from '@/router'
 import { setTimeStamp } from '@/utils/auth'
 export default {
   namespaced: true,
@@ -54,8 +54,10 @@ export default {
      * 退出登录
      */
     logout() {
+      resetRouter()
       this.commit('user/setToken', '')
       this.commit('user/setUserInfo', {})
+      this.commit('app/initTagsViewList')
       removeAllItem()
       // TODO:清理掉权限相关配置
       router.push('/login')
