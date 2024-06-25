@@ -201,8 +201,7 @@ const onToExcelClick = () => {
 
   :deep(.pagination) {
     margin-top: 20px;
-    margin-left: 250px;
-    text-align: center;
+    justify-content: center;
   }
 }
 </style>
