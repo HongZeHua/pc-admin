@@ -18,8 +18,8 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import { useRoute } from 'vue-router'
+import { ref, onActivated } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
 import { articleDetail } from '@/api/article'
 
 // 获取文章数据
@@ -31,8 +31,13 @@ const getArticleDetail = async () => {
 }
 getArticleDetail()
 
+onActivated(getArticleDetail)
+
 // 编辑
-const onEditClick = () => {}
+const router = useRouter()
+const onEditClick = () => {
+  router.push(`/article/editor/${articleId}`)
+}
 </script>
 
 <style lang="scss" scoped>
