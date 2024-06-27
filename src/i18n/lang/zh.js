@@ -203,5 +203,10 @@ export default {
     sheetReceivable: '今日应收',
     sheetActual: '今日实收',
     sheetBalance: '今日结余'
+  },
+  page404: {
+    headline: '没有这个页面...',
+    info: '请检查您输入的URL是否正确， 或单击下面按钮 返回主页。',
+    backHome: '回到主页'
   }
 }

@@ -205,5 +205,10 @@ export default {
     sheetReceivable: 'Receivables today',
     sheetActual: 'Actual today',
     sheetBalance: 'Balance today'
+  },
+  page404: {
+    headline: 'No this page...',
+    info: 'Please check that the URL you entered is correct or click the button below to return to the home page.',
+    backHome: 'Back to Home'
   }
 }
