@@ -5,7 +5,7 @@
     class="svg-external-icon svg-icon"
     :class="className"
   ></div>
-  <svg v-else class="svg-icon" :class="className" aria-hidden="true">
+  <svg v-else class="svg-icon" :class="className">
     <use :xlink:href="iconName"></use>
   </svg>
 </template>
