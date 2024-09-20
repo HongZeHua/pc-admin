@@ -1,6 +1,6 @@
 import path from 'path'
 /**
- * 返回所有子路由
+ * 返回所有子路由的方法
  */
 const getChildrenRoutes = (routes) => {
   const result = []
@@ -13,10 +13,10 @@ const getChildrenRoutes = (routes) => {
 }
 
 /**
- * 处理脱离层级的路由，某个一级路由为其他子路由，则剔除该一级路由，保留路由层级
+ * 处理脱离层级的路由，比如某个一级路由是其他路由的子路由，则剔除该一级路由，保留路由层级
  */
 export const filterRouters = (routes) => {
-  // 所有的子集路由
+  // 根据传过来的数据routes，查找所有的子集路由
   const childrenRoutes = getChildrenRoutes(routes)
   // 根据子集路由进行查重操作
   return routes.filter((route) => {
