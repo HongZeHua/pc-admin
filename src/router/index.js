@@ -51,10 +51,6 @@ export const publicRoutes = [
         component: () => import('@/views/error-page/401')
       }
     ]
-  },
-  {
-    path: '/:pathMatch(.*)*',
-    component: () => import('@/views/error-page/404')
   }
 ]
 
