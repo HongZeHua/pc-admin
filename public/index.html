@@ -17,5 +17,9 @@
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+    <% if (htmlWebpackPlugin.options.cdn && htmlWebpackPlugin.options.cdn.js) {
+    %> <% htmlWebpackPlugin.options.cdn.js.forEach(function(src) { %>
+    <script src="<%= src %>" defer></script>
+    <% }); %> <% } %>
   </body>
 </html>
