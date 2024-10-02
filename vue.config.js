@@ -1,4 +1,7 @@
 const { defineConfig } = require('@vue/cli-service')
+const AutoImport = require('unplugin-auto-import/webpack')
+const Components = require('unplugin-vue-components/webpack')
+const { ElementPlusResolver } = require('unplugin-vue-components/resolvers')
 const path = require('path')
 function resolve(dir) {
   return path.join(__dirname, dir)
@@ -23,12 +26,8 @@ module.exports = defineConfig({
   chainWebpack: (config) => {
     if (process.env.NODE_ENV === 'production') {
       const cdn = {
-        css: [
-          'https://cdn.bootcdn.net/ajax/libs/element-plus/2.7.5/index.min.css',
-          'https://uicdn.toast.com/editor/3.0.2/toastui-editor.min.css'
-        ],
+        css: ['https://uicdn.toast.com/editor/3.0.2/toastui-editor.min.css'],
         js: [
-          'https://cdn.bootcdn.net/ajax/libs/element-plus/2.7.5/index.full.min.js',
           'https://cdn.bootcdn.net/ajax/libs/element-plus-icons-vue/2.3.1/index.min.js',
           'https://cdn.jsdelivr.net/npm/wangeditor@latest/dist/wangEditor.min.js',
           'https://uicdn.toast.com/editor/3.0.2/toastui-editor-all.min.js',
@@ -70,7 +69,6 @@ module.exports = defineConfig({
     if (process.env.NODE_ENV === 'production') {
       config.devtool = false
       config.externals = {
-        'element-plus': 'ElementPlus',
         '@element-plus/icons-vue': 'ElementPlusIconsVue',
         wangeditor: 'E',
         '@toast-ui/editor': 'MkEditor',
@@ -81,6 +79,16 @@ module.exports = defineConfig({
       }
     } else {
       config.devtool = 'eval-cheap-module-source-map'
+    }
+    return {
+      plugins: [
+        AutoImport({
+          resolvers: [ElementPlusResolver()]
+        }),
+        Components({
+          resolvers: [ElementPlusResolver()]
+        })
+      ]
     }
   }
 })

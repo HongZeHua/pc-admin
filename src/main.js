@@ -3,8 +3,7 @@ import i18n from '@/i18n'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-import ElementPlus from 'element-plus'
-import 'element-plus/dist/index.css'
+
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
 import './styles/index.scss'
 import installIcons from '@/icons'
@@ -19,4 +18,4 @@ for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
 installIcons(app)
 insallFilter(app)
 installDirective(app)
-app.use(store).use(router).use(ElementPlus).use(i18n).mount('#app')
+app.use(store).use(router).use(i18n).mount('#app')
